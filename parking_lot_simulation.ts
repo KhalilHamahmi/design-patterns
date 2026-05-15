@@ -1,4 +1,4 @@
-import { ParkingLot, Subscriber, Display } from "./parking_lot.ts";
+import { ParkingLot } from "./parking_lot.ts";
 
 const maxFillIntervalMillis = 1000;
 const maxEmptyIntervalMillis = 2000;
@@ -14,7 +14,7 @@ const fill = async (lot: ParkingLot) => {
   while (!lot.isFull()) {
     await sleep(rand(0, maxFillIntervalMillis));
     lot.enter();
-    console.log(`A car entered the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied`);
+    console.log(`A car entered the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied.`);
   }
 };
 
@@ -22,7 +22,7 @@ const empty = async (lot: ParkingLot) => {
   while (!lot.isEmpty()) {
     await sleep(rand(0, maxEmptyIntervalMillis));
     lot.exit();
-    console.log(`A car left the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied`);
+    console.log(`A car left the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied.`);
   }
 };
 
