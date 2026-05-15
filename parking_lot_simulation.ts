@@ -1,4 +1,4 @@
-import { ParkingLot } from "./parking_lot.ts";
+import { ParkingLot, Subscriber, Display } from "./parking_lot.ts";
 
 const maxFillIntervalMillis = 1000;
 const maxEmptyIntervalMillis = 2000;
@@ -14,7 +14,7 @@ const fill = async (lot: ParkingLot) => {
   while (!lot.isFull()) {
     await sleep(rand(0, maxFillIntervalMillis));
     lot.enter();
-    console.log(`a car entered the lot ${lot.name}`);
+    console.log(`A car entered the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied`);
   }
 };
 
@@ -22,13 +22,13 @@ const empty = async (lot: ParkingLot) => {
   while (!lot.isEmpty()) {
     await sleep(rand(0, maxEmptyIntervalMillis));
     lot.exit();
-    console.log(`a car left the lot ${lot.name}`);
+    console.log(`A car left the lot ${lot.name} ${lot.occupied}/${lot.capacity} occupied`);
   }
 };
 
 const display = async (lot: ParkingLot) => {
   while (true) {
-    console.log(`${lot.name}: ${lot.occupied}/${lot.capacity} occupied`);
+    //console.log(`${lot.name}: ${lot.occupied}/${lot.capacity} occupied`);
     await sleep(refreshDisplayIntervalMillis);
   }
 };
@@ -41,3 +41,26 @@ const emptier = empty(bahnhofParking);
 await screen;
 await filler;
 await emptier;
+
+
+interface Publisher {
+  subscribe(subscriber: Subscriber): void;
+  unsubscribe(subscriber: Subscriber): void;
+  notify(message: string): void;
+}
+
+interface Subscriber {
+  receive(message: string): void;
+}
+
+
+class Display implements Subscriber {
+
+  message: string = "";
+
+  receive(message: string): void {
+    this.message = message;
+    console.log(`Display received message: ${message}`);
+  }
+}
+

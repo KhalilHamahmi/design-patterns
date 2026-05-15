@@ -1,0 +1,28 @@
+{
+  "scriptId": "312",
+  "url": "file:///C:/Users/Khalil%20Hamahmi/OneDrive%20-%20sluz/Dokumente/GitHub/design-patterns/geometry_test.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [
+        {
+          "startOffset": 0,
+          "endOffset": 485,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        {
+          "startOffset": 229,
+          "endOffset": 482,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

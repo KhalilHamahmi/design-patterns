@@ -1,0 +1,116 @@
+{
+  "scriptId": "314",
+  "url": "file:///C:/Users/Khalil%20Hamahmi/OneDrive%20-%20sluz/Dokumente/GitHub/design-patterns/geometry_third_party.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [
+        {
+          "startOffset": 0,
+          "endOffset": 748,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [
+        {
+          "startOffset": 27,
+          "endOffset": 42,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "Rectangle",
+      "ranges": [
+        {
+          "startOffset": 46,
+          "endOffset": 127,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "getWidth",
+      "ranges": [
+        {
+          "startOffset": 130,
+          "endOffset": 169,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "getHeight",
+      "ranges": [
+        {
+          "startOffset": 172,
+          "endOffset": 213,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "toString",
+      "ranges": [
+        {
+          "startOffset": 216,
+          "endOffset": 287,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "getArea",
+      "ranges": [
+        {
+          "startOffset": 325,
+          "endOffset": 406,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getPerimeter",
+      "ranges": [
+        {
+          "startOffset": 416,
+          "endOffset": 510,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getDiagonal",
+      "ranges": [
+        {
+          "startOffset": 520,
+          "endOffset": 642,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getWidthHeightRatio",
+      "ranges": [
+        {
+          "startOffset": 652,
+          "endOffset": 745,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    }
+  ]
+}

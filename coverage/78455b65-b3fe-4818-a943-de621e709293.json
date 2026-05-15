@@ -1,0 +1,105 @@
+{
+  "scriptId": "313",
+  "url": "file:///C:/Users/Khalil%20Hamahmi/OneDrive%20-%20sluz/Dokumente/GitHub/design-patterns/geometry.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [
+        {
+          "startOffset": 0,
+          "endOffset": 377,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [
+        {
+          "startOffset": 24,
+          "endOffset": 28,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "Square",
+      "ranges": [
+        {
+          "startOffset": 32,
+          "endOffset": 76,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "toString",
+      "ranges": [
+        {
+          "startOffset": 79,
+          "endOffset": 130,
+          "count": 0
+        }
+      ],
+      "isBlockCoverage": false
+    },
+    {
+      "functionName": "getSide",
+      "ranges": [
+        {
+          "startOffset": 133,
+          "endOffset": 170,
+          "count": 6
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "<instance_members_initializer>",
+      "ranges": [
+        {
+          "startOffset": 207,
+          "endOffset": 213,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "RectangleAdapter",
+      "ranges": [
+        {
+          "startOffset": 217,
+          "endOffset": 267,
+          "count": 1
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getWidth",
+      "ranges": [
+        {
+          "startOffset": 270,
+          "endOffset": 320,
+          "count": 3
+        }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "getHeight",
+      "ranges": [
+        {
+          "startOffset": 323,
+          "endOffset": 374,
+          "count": 3
+        }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}
